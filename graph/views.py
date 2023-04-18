@@ -4,7 +4,7 @@ from .models import graph
 
 # Create your views here.
 
-def home(request):
+def add_graph(request):
     # add person form
     form = graph(request.POST or None, request.FILES or None)
     if request.method == 'POST':
